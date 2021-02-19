@@ -1,11 +1,11 @@
-<footer class="bg-dark text-white text-lg-start" style="position: fixed; bottom: 0; width: 100%">
+<footer class="bg-dark text-white text-lg-start" >
     <!-- Grid container -->
     <div class="container p-2">
         <!--Grid row-->
-        <div class="row">
+        <div class="row pt-2">
             <!--Grid column-->
             <div class="col-lg-6 col-md-12 mb-4 mb-md-0 m-0">
-                <h5 class="text-uppercase">INFORMATION DU CLUB</h5>
+                <h6 class="text-uppercase">CHALON sur SAÔNE CANOË KAYAK</h6>
                 <p class="m-0">71100 Chalon sur Saône</p>
                 <p class="m-0"><i class="fas fa-map-marker-alt"></i>  1 Rue d'Amsterdam</p>
                 <p class="m-0"><i class="fas fa-phone-square-alt"></i> 06 77 02 16 09</p>
@@ -14,7 +14,7 @@
             <!--Grid column-->
 
             <!--Grid column-->
-            {{--<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                 <h5 class="text-uppercase">Links</h5>
 
                 <ul class="list-unstyled mb-0">
@@ -31,7 +31,7 @@
                         <a href="#!" class="text-white">Link 4</a>
                     </li>
                 </ul>
-            </div>--}}
+            </div> -->
             <!--Grid column-->
 
             <!--Grid column-->
@@ -56,8 +56,8 @@
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/">Chalon sur Saône Canoë Kayak</a>
+        © 2021 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">CSCK</a>
     </div>
     <!-- Copyright -->
 </footer>

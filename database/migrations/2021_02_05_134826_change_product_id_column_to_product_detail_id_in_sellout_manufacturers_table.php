@@ -13,18 +13,18 @@ class ChangeProductIdColumnToProductDetailIdInSelloutManufacturersTable extends 
      */
     public function up()
     {
-        Schema::disableForeignKeyConstraints();
+        // Schema::disableForeignKeyConstraints();
 
-        Schema::table('sellout_manufacturers', function (Blueprint $table) {
-            $table->dropForeign('sellout_manufacturers_product_id_foreign');
-            $table->dropColumn('product_id');
-        });
+        // Schema::table('sellout_manufacturers', function (Blueprint $table) {
+        //     $table->dropForeign('sellout_manufacturers_product_id_foreign');
+        //     $table->dropColumn('product_id');
+        // });
 
-        Schema::table('sellout_manufacturers', function(Blueprint $table) {
-            $table->foreignId('product_detail_id')->after('manufacturer_id')->constrained();
-        });
+        // Schema::table('sellout_manufacturers', function(Blueprint $table) {
+        //     $table->foreignId('product_detail_id')->after('manufacturer_id')->constrained();
+        // });
 
-        Schema::enableForeignKeyConstraints();
+        // Schema::enableForeignKeyConstraints();
     }
 
     /**
@@ -34,17 +34,17 @@ class ChangeProductIdColumnToProductDetailIdInSelloutManufacturersTable extends 
      */
     public function down()
     {
-        Schema::disableForeignKeyConstraints();
+        // Schema::disableForeignKeyConstraints();
 
-        Schema::table('sellout_manufacturers', function (Blueprint $table) {
-            $table->dropForeign('sellout_manufacturers_product_detail_id_foreign');
-            $table->dropColumn('product_detail_id');
-        });
+        // Schema::table('sellout_manufacturers', function (Blueprint $table) {
+        //     $table->dropForeign('sellout_manufacturers_product_detail_id_foreign');
+        //     $table->dropColumn('product_detail_id');
+        // });
 
-        Schema::table('sellout_manufacturers', function(Blueprint $table) {
-            $table->foreignId('product_id')->after('manufacturer_id')->constrained();
-        });
+        // Schema::table('sellout_manufacturers', function(Blueprint $table) {
+        //     $table->foreignId('product_id')->after('manufacturer_id')->constrained();
+        // });
 
-        Schema::enableForeignKeyConstraints();
+        // Schema::enableForeignKeyConstraints();
     }
 }

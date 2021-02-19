@@ -1,11 +1,11 @@
 // Body
-$body-bg: #f8fafc;
+$body-bg: #f7f7f7;
 /*$body-bg: #c4dfe6;*/
 
 // Typography
 /*$font-family-sans-serif: 'Nunito', sans-serif;*/
-$font-family: 'Montserrat', sans-serif;
-$font-size-base: 0.9rem;
+//$font-family: 'Karla', sans-serif;
+$font-size-base: .9rem;
 $line-height-base: 1.6;
 
 // Colors
@@ -16,6 +16,13 @@ $pink: #f66d9b;
 $red: #e3342f;
 $orange: #f6993f;
 $yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
+// $green: #38c172;
+$green: #7da2a9;
+//$teal: #4dc0b5;
+//$cyan: #6cb2eb;
+
+$light: #f7f7f7;
+$teal: #18b7be;
+$cyan: #7da2a9;
+$dark: #151515;
+$dark-1: #4c4c4c; 
