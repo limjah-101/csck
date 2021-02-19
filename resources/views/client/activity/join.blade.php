@@ -75,7 +75,7 @@
         </div>
 
         <div class="row mb-xl justify-content-around">
-            <div class="card  shadow-sm py-3 bg-light mb-5 mb-lg-0" style="min-width: 450px; min-height:350px">
+            <div class="card  pricing shadow-sm py-3 bg-light mb-5 mb-lg-0" style="min-width: 450px; min-height:350px">
                 <div class="card-body">
                     <div class="row align-items-center px-3 mb-2 text-success">
                         <i class="fas fa-address-card fa-2x"></i>
@@ -94,7 +94,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card  shadow-sm py-3 bg-success" style="min-width: 450px; min-height:350px">
+            <div class="card pricing shadow-sm py-3 bg-success" style="min-width: 450px; min-height:350px">
                 <div class="card-body">
                     <div class="row align-items-center px-3 mb-2 text-light">
                         <i class="fas fa-address-card fa-2x"></i>

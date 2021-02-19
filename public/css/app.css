@@ -11176,6 +11176,12 @@ a.nav-link.active {
   width: 30rem;
 }
 
+@media screen and (max-width: 576px) {
+  .card.pricing {
+    min-width: 300px !important;
+  }
+}
+
 @media screen and (max-width: 998px) {
   .social {
     display: none;
