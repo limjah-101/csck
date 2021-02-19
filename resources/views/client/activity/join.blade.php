@@ -24,13 +24,7 @@
                         <hr>
                         <p><i class="fas fa-check-circle fa-lg text-success mr-3"></i>Une photo d’identité</p>
                         <p><i class="fas fa-check-circle fa-lg text-success mr-3"></i>La fiche d'inscription</p>
-                        <p><i class="fas fa-check-circle fa-lg text-success mr-3"></i>Un certificat médical [ voir Modalités certificat médical <a href="#">ici ]</a></p>
-                        <ul>
-                            <li class="list-unstyled  text-muted ml-3">un certificat médical attestant de l’absence de contre-indication à la pratique 
-                                du sport ou du canoë kayak datant de moins d’un an [ la mention “ sport ou canoë-kayak 
-                                en compétition ” est obligatoire​ pour les compétiteurs ]
-                            </li>                           
-                        </ul>                        
+                        <p><i class="fas fa-check-circle fa-lg text-success mr-3"></i>Un certificat médical [ voir Modalités certificat médical <a href="#">ici ]</a></p>                                               
                     </div>                    
                 </div>                      
                 <!--renew-->
