@@ -2,9 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 
 /**
@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
  */
 Route::group(['prefix' => '/admin'], function () {
     Auth::routes();
-    Route::get('/admin/home', 'HomeController@index')->name('home');
+    Route::get('/home', 'HomeController@index')->name('home');
     
     /**
     | Pages routes
