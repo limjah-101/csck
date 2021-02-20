@@ -7,9 +7,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer async></script>
     <!-- Fonts -->    
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;1,200&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">
@@ -41,11 +41,11 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle {{ Route::currentRouteNamed('about') ? 'nav-link dropdown-toggle active' : 'nav-link dropdown-toggle' }}"
                             href="#" 
-                            id="navbarDropdown"
+                            id="about-dropdown"
                             role="button" 
                             data-toggle="dropdown" 
                             aria-haspopup="true" aria-expanded="false">Le club <i class="caret pull-right"></i></a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu" aria-labelledby="about-dropdown">
                             <a class="dropdown-item" href="{{ route('presentation') }}">Présentation</a>
                             <a class="dropdown-item" href="{{ route('staff') }}">L'équipe</a>                            
                         </div>
@@ -54,11 +54,11 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" 
                             href="#" 
-                            id="navbarDropdown"
+                            id="activity-dropdown"
                             role="button" 
                             data-toggle="dropdown" 
                             aria-haspopup="true" aria-expanded="false">Activités <i class="caret pull-right"></i></a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu" aria-labelledby="activity-dropdown">
                             <a class="dropdown-item" href="{{ route('loan') }}">Nos préstations</a>
                             <a class="dropdown-item" href="{{ route('planning') }}">Séance de navigation</a>
                             <a class="dropdown-item" href="{{ route('join') }}">Adhérer</a>                            
@@ -88,7 +88,9 @@
                     <a href="#!" class="nav-link"><i class="fab fa-twitter fa-lg"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('login')}}" title="Se Connecter"><i class="far fa-user-circle fa-lg"></i></span></a>
+                    <a class="nav-link" href="{{route('login')}}" title="Se Connecter">
+                        <i class="far fa-user-circle fa-lg"></i>
+                    </a>
                 </li>
            </ul>
         </div>
