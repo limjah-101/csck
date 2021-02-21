@@ -12,7 +12,7 @@ class SharedController extends Controller
      * news page
      */
     public function homePage() {
-        return view('client.home');
+        return view('client.home')->with('title', 'Acceuil');
     }
 
 
