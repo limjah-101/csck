@@ -37,7 +37,7 @@
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05)">
         © 2021 Copyright
-        <a class="text-white" href="https://mdbootstrap.com/">CCK Chalon-sur-Saône</a>
+        <a class="text-white" href="https://mdbootstrap.com/">CSCK Chalon-sur-Saône</a>
     </div>
     <!-- Copyright -->
 </footer>
