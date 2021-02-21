@@ -6,7 +6,7 @@
             <!-- <div class="home-overlay"></div> -->
             <div class="col-md-12 home">
                 <div class="header">           
-                    <h1>canoë | kayak club</h1>
+                    <h1>canoë | <span class="text-success">kayak</span> club</h1>
                     <h3>chalon sur saône</h3>
                 </div>
             </div>
