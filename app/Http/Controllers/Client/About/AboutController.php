@@ -19,14 +19,14 @@ class AboutController extends Controller
         $page = Page::where('title', '=', 'présentation')->first();            
         $contents = Article::where(['page_id' => $page->id, 'is_active' => true])->get();
         //dd($contents);
-        return view('client.about.presentation')->with(['contents' => $contents]);
+        return view('client.about.presentation')->with(['contents' => $contents, 'title' => 'Présentation']);
     }
 
     public function aboutStaff() {
         $page = Page::where('title', '=', 'équipe')->first();           
         $contents = Article::where(['page_id' => $page->id, 'is_active' => true])->get();
 
-        return view('client.about.staff')->with(['contents' => $contents]);
+        return view('client.about.staff')->with(['contents' => $contents, 'title' => 'L\équipe']);
     }
        
 }

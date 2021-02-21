@@ -15,17 +15,17 @@ class ActivityController extends Controller
    
     public function activityJoin() {        
         
-        return view('client.activity.join');
+        return view('client.activity.join')->with(['title' => 'Adhérer']);
     }
 
     public function activityPlanning() {        
         
-        return view('client.activity.planning');
+        return view('client.activity.planning')->with(['title' => 'Planning']);
     }
 
     public function activityLoan() {        
         
-        return view('client.activity.loan');
+        return view('client.activity.loan')->with(['title' => 'Préstations']);
     }
 
 }

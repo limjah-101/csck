@@ -20,7 +20,7 @@ class SharedController extends Controller
      * news page
      */
     public function newsUpcoming() {
-        return view('client.news.upcoming');
+        return view('client.news.upcoming')->with(['title' => 'Évènements à venir']);
     }
 
     /**
@@ -31,7 +31,7 @@ class SharedController extends Controller
         $contents = $page->articles->where('is_active', true);
         
         
-        return view('client.dragon_ladies.dragon_ladies', compact('contents'));
+        return view('client.dragon_ladies.dragon_ladies')->with(['contents' => $contents, 'title' => 'Dragon Boat']);
     }
 
 }

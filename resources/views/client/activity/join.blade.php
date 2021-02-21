@@ -29,7 +29,7 @@
                 </div>                      
                 <!--renew-->
                 <div class="row mt-xl">  
-                    <h3 class="mb-4">Renouveller ma licence</h3>                     
+                    <h3 class="mb-4">Renouvelé ma licence</h3>                     
                     <p>
                         Vous souhaitez renouveler votre adhésion. Veuillez trouver la liste des documents à fournir ci-dessous.
                     </p>            

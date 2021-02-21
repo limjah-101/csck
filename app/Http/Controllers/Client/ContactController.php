@@ -36,7 +36,7 @@ class ContactController extends Controller
             
             return redirect()->back()->with('success', 'Votre message à bien été envoyé !');
         }
-        return view('client.contact.contact_us');
+        return view('client.contact.contact_us')->with(['title' => 'Nous contacter']);
     }
 
     
