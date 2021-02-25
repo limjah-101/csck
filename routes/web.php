@@ -53,7 +53,7 @@ Route::group(['prefix' => '/admin'], function () {
      */
     Route::match(['get', 'post'], 'document/upload', 'FileController@uploadDocuments')->name('document.create');
     Route::get('/document', 'FileController@index')->name('document.all');
-    Route::get('/documents/{file}', 'FileController@downloadFile')->name('document.download');
+    Route::get('/documents/{document}', 'FileController@downloadFile')->name('document.download');
 
 
 

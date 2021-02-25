@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container py-5">
-        <div class="row justify-content-between align-items-center">            
+        <div class="row justify-content-between align-items-center mb-5">            
             <h2>Mes Documents</h2>
             <a href="{{ route('document.create') }}" class="btn btn-primary"><i class="fas fa-plus"></i> Ajouter une document</a>
         </div> 
@@ -17,7 +17,7 @@
                     </button>
                 </div>
           @endif          
-                @foreach(\App\FileUpload::all() as $file)
+                @foreach(\App\FileUpload::all() as $file)                
                     <p>{{ $file->title }}</p>
                     <a href="{{ route('document.download', $file) }}">Téléchager</a>
                 @endforeach

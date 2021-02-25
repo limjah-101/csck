@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\FileUpload;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
+
 
 class FileController extends Controller
 {
@@ -18,6 +20,9 @@ class FileController extends Controller
         return view('files.inscription');
     }
 
+    /**
+     * @param $request
+     */
     public function uploadDocuments(Request $request) {
 
         
@@ -30,30 +35,33 @@ class FileController extends Controller
                 'document.mimes' => 'Format accépté - PDF',
                 'title.required' => 'Veuillez saisir un titre'
             ]);
-    
-            
+                
             $file = $request->file('document');
             $filename = $file->getClientOriginalName();
-            // $file_without_ext = pathinfo($filename, PATHINFO_FILENAME);            
+            
+            $isFileExists = File::exists(public_path('storage/uploads/'.$filename));
+
+            if($isFileExists)               
+                return back()->with('error', 'Le fichier ' . $filename . ' existe déjà');
+            
             $path = $file->storeAs('uploads', $filename, 'public');
                         
             $upload = new FileUpload();
-            $upload->name = $request->title;
+            $upload->title = $request->title;
             $upload->path = $path;            
             $upload->save();
                         
-            return redirect()->route('document.all')->with('success', 'Fichier bien enregistré');
+            return redirect()->route('document.all')->with('success', 'Votre fichier à bien été enregistré');
         }
 
         return view('admin.documents.upload');
     }
 
-    public function downloadFile(FileUpload $file) {
-
-        if(!$file)
-            return redirect()->back()->with('error', 'Fichier introuvable');
+    /**
+     * @param $file 
+     */
+    public function downloadFile(FileUpload $document) {
         
-        return response()->download(public_path('storage/'.$file->path));
-
+        return response()->download(public_path('storage/'.$document->path));
     }
 }

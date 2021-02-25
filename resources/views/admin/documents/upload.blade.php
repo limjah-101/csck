@@ -3,7 +3,7 @@
 @section('content')
 <div class="container py-5">
     <div class="row justify-content-center">
-        <div class="col-md-8">            
+        <div class="col-md-4">            
             <h2 class="mb-5">Ajouter un document</h2> 
             <!-- @if (count($errors) > 0)
             <div class="alert alert-danger alert-dismissible fade show" role="alert">                
@@ -14,7 +14,15 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-          @endif               -->
+          @endif-->
+            @if ($message = Session::get('error'))
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <p>{{ $message }}</p>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            @endif
             <form action="{{ route('document.create') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
@@ -34,7 +42,7 @@
                 
                 <div class="mt-4">
                     <button type="submit" name="document_create" class="btn btn-primary">Ajouter <i class="fas fa-check"></i> </button>
-                    <a href="{{ route('event.all') }}" class="btn btn-primary"><i class="fa fa-times"></i> Annuler</a>
+                    <a href="{{ route('document.all') }}" class="btn btn-primary"><i class="fa fa-times"></i> Annuler</a>
                 </div>
             </form>
         </div>
