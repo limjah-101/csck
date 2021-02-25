@@ -24,7 +24,7 @@
                     </button>
                 </div>
             @endif          
-                @foreach(\App\FileUpload::all() as $file)   
+                @forelse(\App\FileUpload::all() as $file)   
                     <div class="card-body w-100 shadow mb-3">
                         <p class="mb-2">{{ $file->title }}</p>
                         <div class="d-flex">
@@ -53,7 +53,11 @@
                             </div>
                         </div>
                     </div>
-                @endforeach
+                @empty
+                    <div class="card-body w-100 shadow text-center">
+                        <p class="mb-2">Pas de document disponible</p>                        
+                    </div>
+                @endforelse
             </div>
         </div>       
     </div>
