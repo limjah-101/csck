@@ -24,11 +24,15 @@
                     </button>
                 </div>
             @endif          
-                @foreach(\App\FileUpload::all() as $file)                
-                    <p>{{ $file->title }}</p>
-                    <a href="{{ route('document.download', $file) }}">Téléchager</a>
-                    <!-- <a href="{{ route('document.delete', $file) }}">Supprimé</a> -->
-                    <a href="#" data-toggle="modal" data-target="#file-delete-{{ $file->id }}">Supprimer</a>
+                @foreach(\App\FileUpload::all() as $file)   
+                    <div class="card-body w-100 shadow mb-3">
+                        <p class="mb-2">{{ $file->title }}</p>
+                        <div class="d-flex">
+                            <h5><a class="badge badge-primary mr-2" href="{{ route('document.download', $file) }}">Téléchager</a></h5>
+                            <!-- <a href="{{ route('document.delete', $file) }}">Supprimé</a> -->
+                            <h5><a class="badge badge-danger" href="#" data-toggle="modal" data-target="#file-delete-{{ $file->id }}">Supprimer</a></h5>
+                        </div>
+                    </div>             
 
                     <!-- Modal -->
                     <div class="modal fade" id="file-delete-{{ $file->id }}" tabindex="-1" role="dialog"  aria-hidden="true">
@@ -36,7 +40,7 @@
                             <div class="modal-content">
                             <div class="modal-header border-bottom-0">                                
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
+                                    <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body border-bottom-0 d-inline-flex align-items-center">
