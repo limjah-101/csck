@@ -15,25 +15,21 @@ class FileController extends Controller
         return view('admin.documents.all');
     }
     
-    public function signUp(Request $request) {
-
-        return view('files.inscription');
-    }
-
+    
     /**
      * @param $request
      */
     public function uploadDocuments(Request $request) {
-
         
         if($request->exists('document_create')) {
+
             $this->validate($request,[
                 'title' => 'required',
                 'document' => 'required|mimes:pdf|max:2048'
             ],[
                 'document.required' => 'Veuillez choisir un fichier',
                 'document.mimes' => 'Format accépté - PDF',
-                'title.required' => 'Veuillez saisir un titre'
+                'title.required' => 'Saisir un titre pour le document'
             ]);
                 
             $file = $request->file('document');
@@ -57,11 +53,29 @@ class FileController extends Controller
         return view('admin.documents.upload');
     }
 
+
     /**
      * @param $file 
      */
     public function downloadFile(FileUpload $document) {
         
         return response()->download(public_path('storage/'.$document->path));
+    }
+
+    
+    /**
+     * @param $file
+     */
+    public function deleteDocument(FileUpload $document) {
+        
+        $file = public_path('storage/' . $document->path);
+
+        if(File::exists($file)) {
+
+            File::delete($file);
+            $document->delete();
+
+            return back()->with('success', 'Le document a bien été supprimé');
+        }
     }
 }
