@@ -66,7 +66,7 @@
                     </li>
 
                     <li class="nav-item ">
-                        <a class="{{ Route::currentRouteNamed('links') ? 'nav-link active' : 'nav-link' }}" href="{{route('dragon_ladies')}}">Pagaie santé</a>
+                        <a class="{{ Route::currentRouteNamed('dragon_ladies') ? 'nav-link active' : 'nav-link' }}" href="{{route('dragon_ladies')}}">Pagaie santé</a>
                     </li>
 
                     <li class="nav-item ">
@@ -82,10 +82,10 @@
             </div>
            <ul class="navbar-nav mr-auto social">
                 <li class="nav-item">
-                    <a href="#!" class="nav-link"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="https://www.facebook.com/groups/860575377387016/about" target="_blank"  class="nav-link"><i class="fab fa-facebook fa-lg"></i></a>
                 </li>               
                 <li class="nav-item">
-                    <a href="#!" class="nav-link"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="https://twitter.com/CSCK_DL/media" target="_blank" class="nav-link"><i class="fab fa-twitter fa-lg"></i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('login')}}" title="Se Connecter">

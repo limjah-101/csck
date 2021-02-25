@@ -7,6 +7,7 @@ use App\Page;
 use App\Article;
 use Illuminate\Http\Request;
 use Behat\Transliterator\Transliterator;
+use PDF;
 
 class PageController extends Controller
 {
@@ -115,6 +116,20 @@ class PageController extends Controller
         ]);            
         
         return redirect()->route('page.all');
+    }
+
+    /**
+     * 
+     */
+    public function exportArticles() {
+        $activePages = Page::where('is_active', true)->get();
+        
+
+        view()->share( 'activePages', $activePages );
+
+        $pdf = PDF::loadView('admin.articles.article_pdf', $activePages);
+       
+        return $pdf->download('test.pdf');
     }
 
 

@@ -10,12 +10,9 @@
                 <!--purchase-->                                                  
                 <div class="row">  
                     <h3 class="mb-4">Adhérer au club</h3>                     
-                    <p >
-                        Vous souhaitez adhérer au CSCK. L’inscription au CSCK Chalon-sur-Saône 
-                        se fait exclusivement en ligne depuis cette page. Ceci permet une meilleure gestion, 
-                        une simplification et une plus grande réactivité. Nous espérons que vous apprécierez et 
-                        nous comptons sur vos observations pour l’améliorer.
-                    </p>                      
+                    <p >L’inscription à CHALON SUR SAÔNE CANOË KAYAK – CSCK, vaut acceptation du règlement intérieur. <a href="#"> > voir le document</a></p>
+                    <p>L’adhérent s’engage à lire à respecter le code du pratiquant et la charte Eco-pagayeur. <a href="#"> > voir le document</a></p>
+                    <p>L’adhérent s’engage à respecter le dit règlement et les différentes chartes. <a href="#"> > voir les document</a></p>                                    
                 </div><!--end_purchase--> 
 
                 <div class="row mt-4">                    
@@ -23,8 +20,16 @@
                         <h6>DOCUMENTS À FOURNIRS</h6>
                         <hr>
                         <p><i class="fas fa-check-circle fa-lg text-success mr-3"></i>Une photo d’identité</p>
-                        <p><i class="fas fa-check-circle fa-lg text-success mr-3"></i>La fiche d'inscription</p>
-                        <p><i class="fas fa-check-circle fa-lg text-success mr-3"></i>Un certificat médical [ voir Modalités certificat médical <a href="#">ici ]</a></p>                                               
+                        <p><i class="fas fa-check-circle fa-lg text-success mr-3"></i>La fiche d'inscription dûment remplie et signée </p>
+                        <p><i class="fas fa-check-circle fa-lg text-success mr-3"></i>Un Certificat médical autorisant le sport en eau calme et vive, loisir et compétition</p>
+                        <p><i class="fas fa-check-circle fa-lg text-success mr-3"></i>Attestation de prise de connaissance des conditions d’assurance dûment remplie</p>
+                        <p><i class="fas fa-check-circle fa-lg text-success mr-3"></i>Fiche de liaison sanitaire dûment remplie</p>
+                        <p><i class="fas fa-check-circle fa-lg text-success mr-3"></i>1 enveloppe libellée votre adresse et timbrée</p>
+                        <p><i class="fas fa-check-circle fa-lg text-success mr-3"></i>Votre règlement</p>
+                        <div class="d-inline-flex align-items-center mt-3 text-success">
+                            <i class="fas fa-exclamation-circle fa-2x mr-3"></i>
+                            <p> L’INSCRIPTION NE SERA DÉFINITIVE QUE LORSQUE LE DOSSIER SERA COMPLET</p>
+                        </div>
                     </div>                    
                 </div>                      
                 <!--renew-->
@@ -44,23 +49,9 @@
                 </div><!--end_renew-->                                         
             </div>
             
-            <!--aside-->
-            <div class="col-xl-3 offset-xl-1 border-left mt-xl mt-lg-3">
-                <div class=""  style="min-height: 150px;">
-                    <h6 class="text-uppercase">Quoi de neuf au CSCK</h6>
-                    <hr>
-                </div>
-
-
-                <div>
-                    <div class="row justify-content-between align-items-center px-3">
-                        <h6 class="text-uppercase">Activités à venir </h6>
-                        <a href=""><i class="fas fa-exclamation-circle fa-lg text-success"></i></a> 
-                    </div>
-                    <hr>
-                    <p class="card-body text-light bg-success rounded font-weight-bold shadow">Assemblé Générale le 27 Février 2021 à 18h en visio.</p>
-                </div>
-            </div><!--end_aside-->
+            <!--aside-->                     
+            @include('client.partials.events')
+            <!--end_aside-->
         </div>
 
         <!---pricing-->

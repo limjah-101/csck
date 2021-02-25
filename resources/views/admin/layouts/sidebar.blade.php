@@ -115,22 +115,16 @@
                         <li class="sidebar-dropdown">
                             <a href="#">
                                 <i class="fa fa-chart-line"></i>
-                                <span>Charts</span>
+                                <span>Évènements</span>
                                 </a>
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                    <a href="#">Pie chart</a>
+                                        <a href="{{ route('event.all') }}">Mes évènements</a>
                                     </li>
                                     <li>
-                                    <a href="#">Line chart</a>
-                                    </li>
-                                    <li>
-                                    <a href="#">Bar chart</a>
-                                    </li>
-                                    <li>
-                                    <a href="#">Histogram</a>
-                                    </li>
+                                        <a href="{{ route('event.create') }}">Ajouter</a>
+                                    </li>                                    
                                 </ul>
                             </div>
                         </li>
@@ -167,9 +161,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="{{ route('document.all') }}">
                                 <i class="fa fa-folder"></i>
-                                <span>Examples</span>
+                                <span>Mes Documents</span>
                             </a>
                         </li>
                     </ul>

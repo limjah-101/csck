@@ -32,7 +32,7 @@
                 <p>{{ $article->body }}</p><br>
                 <p>{{ $article->listItem1 }}</p>
 
-                <div class="d-inline-flex justify-content-around w-25 align-items-center mt-5 float-right">
+                <div class="d-flex justify-content-around w-25 align-items-center mt-5 float-right">
                     <a href="{{ route('article.edit', $article) }}" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Modifier</a>
                     <a href="{{ route('article.toggleActive', $article) }}" class="btn btn-sm btn-success">{{ $article->is_active ? 'désactivé' : 'activé' }}</a>
                     <a href="{{ route('article.delete', $article) }}" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i> supprimer</a>

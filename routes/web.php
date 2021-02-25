@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
@@ -34,6 +35,28 @@ Route::group(['prefix' => '/admin'], function () {
     Route::match(['get', 'put'], '/article/edit/{article}', 'ArticleController@edit')->name('article.edit');
     Route::get('/article/delete/{article}', 'ArticleController@delete')->name('article.delete');    
     Route::get('/article/active/{article}', 'ArticleController@toggleActive')->name('article.toggleActive');
+
+    Route::get('/pdf', 'PageController@exportArticles');
+
+     /**
+    | Events routes
+     */
+    Route::get('/event', 'EventController@index')->name('event.all');
+    Route::match(['get', 'post'],'/event/create', 'EventController@store')->name('event.create');
+    Route::match(['get', 'put'], '/event/edit/{event}', 'EventController@edit')->name('event.edit');
+    Route::get('/event/delete/{event}', 'EventController@delete')->name('event.delete');
+    Route::get('/event/active/{event}', 'EventController@toggleActive')->name('event.toggleActive');   
+  
+    
+    /**
+    | Files routes
+     */
+    Route::match(['get', 'post'], 'document/upload', 'FileController@uploadDocuments')->name('document.create');
+    Route::get('/document', 'FileController@index')->name('document.all');
+    Route::get('/documents/{file}', 'FileController@downloadFile')->name('document.download');
+
+
+
 });
 
 
@@ -75,3 +98,13 @@ Route::get('/dragon-ladies', 'Client\SharedController@dragonLadies'
  */
 Route::match(['get', 'post'], '/nous-contacter', 'Client\ContactController@contactPage')
     ->name('contact');
+
+
+
+
+
+/**
+| Files routes
+*/
+
+Route::match(['get', 'post'], 'club/inscription', 'FileController@signUp')->name('club.signup');

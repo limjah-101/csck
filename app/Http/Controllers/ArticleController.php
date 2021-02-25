@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Page;
 use App\Article;
 use Illuminate\Http\Request;
+use PDF;
 
 class ArticleController extends Controller
 {
@@ -102,4 +103,6 @@ class ArticleController extends Controller
         // Todo redirect to page id ?? 
         return redirect()->back();
     }
+
+    
 }

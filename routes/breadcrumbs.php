@@ -48,3 +48,14 @@ Breadcrumbs::for('contact', function ($trail) {
     $trail->parent('home');
     $trail->push('Nous contacter', route('contact'));
 });
+
+// Home / Upload File
+Breadcrumbs::for('documents', function ($trail) {
+    $trail->parent('home');
+    $trail->push('Mes Documents', route('document.all'));
+});
+
+Breadcrumbs::for('document_create', function ($trail) {
+    $trail->parent('documents');
+    $trail->push('Ajouter', route('document.create'));
+});
