@@ -18,6 +18,7 @@
     --blue_dark_shade_2: #24455d;
     --blue_transparent: rgba(82, 170, 199, 0.06);
 
+    --yellow_light_shade: #fcecc6;
     --yellow: #f7c856; /* button, icons ... */
     --yellow_dark_shade: #e49624;
 
@@ -81,7 +82,7 @@ a:hover {
 }
 .sub_title {
     position: relative;
-    margin: 0 0 3rem 0;
+    margin: 5px 0 4rem 0;
 }
 .sub_title::after {
     position: absolute;
@@ -340,7 +341,7 @@ a.nav-link.active:before {
     left: -25px;
     width: 100px;
     height: 100px;
-    fill: var(--blue_transparent);
+    fill: var(--yellow_light_shade);
 }
 
 .icon-wrapper > i {
@@ -461,7 +462,7 @@ section home activities
 .owl-prev i,
 .owl-next i {
     font-size: 25px;
-    color: var(--blue);
+    color: var(--white);
 }
 
 .owl-dots {
@@ -473,7 +474,7 @@ section home activities
     height: 10px;
     border-radius: 50%;
     display: inline-block;
-    background: #ccc;
+    background: var(--white);
     margin: 0 3px;
 }
 .owl-dots button.owl-dot.active {
