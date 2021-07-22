@@ -18,7 +18,8 @@
     <div class="container">
         <div class="row h-100 justify-content-between align-items-center">
             <div class="col-xl-4 mb-5 mb-xl-0">
-                <h3 class="mb-4">Dragon boat</h3>
+                <h3 class="">Dragon boat</h3>
+                <h6 class="text-grey_light sub_title">Santé, bien être par le sport.</h6>
                 <p class="text-justify">Cette section ouverte en 2016 permet aux femmes atteintes d’un cancer de reprendre 
                     une activité sportive, dynamique et conviviale. Les Ladies se retrouvent tous les 
                     samedis à 9h15 pour naviguer sur la Saône, si le temps le permet. Quand le temps est défavorable à une 
@@ -55,11 +56,14 @@
                 </div>
             </div>
             <div class="col-xl-4 offset-0 offset-xl-2 order-1 order-xl-2">
-                <h3 class="mb-4">Octobre rose</h3>
+                <h3>Octobre rose</h3>
+                <h6 class="text-grey_light sub_title">Ruban rose.</h6>
                 <p class="text-justify">Chaque année en octobre, la campagne de lutte contre le cancer du sein organisée par 
                     l’association Ruban Rose propose de lutter contre le cancer du sein en informant, en dialoguant et en mobilisant. 
-                    A Chalon-sur-Saône chaque année au mois d’Octobre, nous invitons le public à venir partager une balade sur la Saone. 
-                    Il nous arrive aussi de rejoindre d’autre groupes de Dragon Ladies sur de grands événements.</p>
+                    A Chalon-sur-Saône à cette occasion, une rencontre départementale est organisée sur la Saône 
+                    (parcours Allériot- Marches du Port Villiers à Chalon). Cette rencontre mobilise pas moins de 100 kayakistes, tous vêtus de rose.
+                </p>
+                <a  class="mt-2" href="https://www.cancerdusein.org/octobre-rose/octobre-rose" aria-label="octobre rose" target="__blank">Plus d'infos</a>
             </div>           
         </div>
     </div>

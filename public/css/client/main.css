@@ -51,6 +51,7 @@ h1,
 h2,
 h3 {
     font-weight: 600;
+    margin: 0;
 }
 
 a {
@@ -73,6 +74,22 @@ a:hover {
 
 .btn-warning:hover {
     color: var(--white);
+}
+
+.text-grey_light {
+    color: var(--grey_font_light);
+}
+.sub_title {
+    position: relative;
+    margin: 0 0 3rem 0;
+}
+.sub_title::after {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 0;
+    border-bottom: 3px solid var(--yellow);
+    width: 50px;       
 }
 
 /*-------------------------------------
