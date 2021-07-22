@@ -1,16 +1,24 @@
 @extends('client.layouts.main')
 
 @section('content')
+ <!--section hero-->
+ <section  id="main-hero" >
+        <div class="container">
+            <div class="row justify-content-center align-items-center">               
+                <div class="breadcrumbs">
+                        {{ Breadcrumbs::render('staff') }}
+                    </div>
+                </div> 
+            </div>            
+        </div>
+    </section><!--end section hero-->
+    
     <div class="container py-5">
         <div class="row">
-            <div class="col-xl-8">
-                <div class="row mb-4">
-                    {{ Breadcrumbs::render('staff') }}
-                </div>
-
+            <div class="col-xl-8">               
                 <div class="row"> 
                     @foreach($contents as $content) 
-                        <h3 class="mb-4">{{$content->title}}</h3>                     
+                        <h2 class="mb-4">{{$content->title}}</h2>                     
                         <p class="mb-4">{{ $content->body }}</p>
                         
                         <p>{{ $content->listItem1 ?? '' }}</p> 
@@ -23,8 +31,8 @@
             <!--end_aside-->
         </div>
         <div class="row">
-            <div class="col-xl-12 px-xl-0 mt-xl">                                                                          
-                <h3>Le Bureau</h3> 
+            <div class="col-xl-12 px-xl-0 mt-5">                                                                          
+                <h2>Le Bureau</h2> 
                 <hr>                                                                                          
                 <div class="row mt-5 justify-content-center justify-content-lg-around">                    
                     <div class="card text-center bg-transparent border-0" style="width: 250px; ">                       
@@ -65,8 +73,8 @@
                 </div>                                                                                                                                   
             </div>  
             
-            <div class="col-xl-12 px-xl-0 mt-xl mb-xl">                                                                          
-                <h3>Les Animateurs</h3> 
+            <div class="col-xl-12 px-xl-0 my-5">                                                                          
+                <h2>Les Animateurs</h2> 
                 <hr>                                                                                          
                 <div class="row mt-5 justify-content-center justify-content-lg-around">                    
                     <div class="card text-center bg-transparent border-0" style="width: 250px; ">                       

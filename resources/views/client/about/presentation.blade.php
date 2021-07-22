@@ -1,17 +1,28 @@
 @extends('client.layouts.main')
 
 @section('content')
+
+    <!--section hero-->
+    <section  id="main-hero" >
+        <div class="container">
+            <div class="row justify-content-center align-items-center">               
+                <div class="breadcrumbs">
+                        {{ Breadcrumbs::render('presentation') }}
+                    </div>
+                </div>            
+        </div>
+    </section><!--end section hero-->
+
+    <div class="secondary-clip-path"  style="background-image: url('/assets/blobs/slides.webp');">
+    </div>
+
     <div class="container py-5">
         <div class="row">
-            <div class="col-xl-8">
-                <div class="row mb-4">
-                    {{ Breadcrumbs::render('presentation') }}
-                </div>
-             
+            <div class="col-xl-8">                             
                 @foreach($contents as $content)                                                    
                     <div class="row">  
-                        <div class="col-xl-12 px-xl-0 mb-xl">
-                            <h3 class="mb-4">{{ $content->title }}</h3>
+                        <div class="col-xl-12 px-xl-0 mb-5">
+                            <h2 class="mb-4">{{ $content->title }}</h2>
                             @if(!is_null($content->image) && $content->image !== 'google_map')
                                 <img src="{{ asset('/assets/bck.jpg') }}" alt="" class="rounded w-100 mb-4" style="object-fit: cover; max-height: 300px">                   
                             @elseif($content->image === 'google_map')
@@ -51,8 +62,8 @@
 
         <div class="row mt-xl mb-xl">  
             <div class="col-xl-12 px-xl-0">
-                <h3 class="">Nos partenaires</h3>                                      
-                <hr>
+                <h2 class="">Nos partenaires</h2>                                      
+                
                 <div class="row mt-5 justify-content-around">                        
                     <a href="https://www.ffck.org/" target="_blank" class="mb-4">
                         <img src="{{ asset('/assets/partenaires/ffck.jpeg') }}" class="rounded" alt="" height="120px" width="150px">

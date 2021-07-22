@@ -2,7 +2,7 @@
 
 // Home
 Breadcrumbs::for('home', function ($trail) {
-    $trail->push('Acceuil', route('home'));
+    $trail->push('Accueil', route('home'));
 });
 
 // About

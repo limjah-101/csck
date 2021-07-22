@@ -1,13 +1,22 @@
 @extends('client.layouts.main')
 
 @section('content')
-    <div class="container py-5">
-        <div class="row mb-4">
-            {{ Breadcrumbs::render('contact') }}
+     <!--section hero-->
+     <section  id="main-hero" >
+        <div class="container">
+            <div class="row justify-content-center align-items-center">               
+            <div class="breadcrumbs">
+                        {{ Breadcrumbs::render('contact') }}
+                    </div>
+                </div>
+            </div>            
         </div>
+    </section><!--end section hero-->
+    <div class="container py-5">
+       
         <div class="row mb-5">
             <div class="col-10 px-0">
-                <h3>Nous contacter</h3>
+                <h2>Nous contacter</h2>
             </div>
         </div>
         
@@ -17,17 +26,18 @@
             </div>                                                                                                                                                                 
         </div>
 
-        <div class="row mt-xl mb-5">            
-            <h3 class="mb-5 text-underline">Laisser un message</h3>
+        <div class="row mt-5 mb-5">            
+            <h2 class="mb-5 text-underline">Laisser un message</h2>
         </div>
 
         <div class="row mb-xl">
-            <div class="col-xl-4 mb-5">
-                <div class="card-body text-center">
-                    <img class="card-image mb-3 " height="100px" src="{{ asset('/assets/logo.jpg') }}" alt="logo image chalon-sur-saône kayak canoê">
-                    <p class="mb-2 text-dark mt-5"> 1 Rue d'Amsterdam</p>
-                    <p class="mb-2 text-dark">71000 Chalon-sur-Saône</p>
-                    <a class="mb-2 text-dark" href="tel:00 33 6 77 02 16 09"><p> 06 77 02 16 09</p></a>                    
+            <div class="col-xl-4 mb-5 mb-md-0">
+                <div class="card-body text-center bg-dark h-100 rounded contact-aside">
+                    <img class="card-image mt-5" height="100px" src="{{ asset('/assets/logo-y.png') }}" alt="logo image chalon-sur-saône kayak canoê">
+                    <p class="mb-2 text-warning mt-5"> example@email.com</p>
+                    <a class="mb-2" href="tel:00 33 6 77 02 16 09"><p class="text-warning"> 06 77 02 16 09</p></a>                    
+                    <p class="mb-2 text-warning"> 1 Rue d'Amsterdam</p>
+                    <p class="mb-2 text-warning">71000 Chalon-sur-Saône</p>
                 </div>
             </div>
             <div class="col-xl-7 offset-1 px-0">
@@ -81,7 +91,7 @@
                             @enderror
                     </div>
 
-                    <button type="submit" name="send_message" class="btn btn-success btn-lg mt-4 float-right text-light font-weight-bold shadow">Envoyer</button>
+                    <button type="submit" name="send_message" class="btn btn-warning  mt-4 float-right text-light font-weight-bold shadow">Envoyer</button>
                 </form>  
             </div>                       
         </div>

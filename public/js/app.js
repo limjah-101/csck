@@ -49744,6 +49744,8 @@ module.exports = function(module) {
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./main */ "./resources/js/main.js");
+
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /**
  * The following block of code may be used to automatically register your
@@ -49879,6 +49881,70 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ "./resources/js/main.js":
+/*!******************************!*\
+  !*** ./resources/js/main.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  /*------------------------------------------------
+   * navigation
+  -------------------------------------------------*/
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll > 400) {
+      $(".navbar").css("background", "#f2f3f7");
+      $(".navbar.navbar-expand-lg").css("padding", "5px");
+      $(".nav-link").css({
+        color: "#58585a",
+        "font-weight": 600
+      });
+      $(".info_nav").hide();
+    } else {
+      $(".navbar").css("background", "transparent");
+      $(".navbar.navbar-expand-lg").css("padding", "16px");
+      $(".nav-link").css("color", "#f2f3f7");
+      $(".info_nav").show();
+    }
+  });
+  /*------------------------------------------------
+   * responsive owl carousel
+  -------------------------------------------------*/
+
+  $(".owl-carousel").owlCarousel({
+    autoplay: false,
+    // dots: true,
+    // loop: true,
+    // nav: true,
+    // items: 1,
+    margin: 30,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        dots: true,
+        nav: true
+      },
+      778: {
+        items: 2,
+        dots: true,
+        nav: true
+      },
+      1170: {
+        items: 3,
+        dots: true,
+        nav: true
+      }
+    },
+    navText: ['<span class="nav_icon"><i class="icofont-long-arrow-left"></i></span>', '<span class="nav_icon"><i class="icofont-long-arrow-right"></i></span>']
+  });
+});
 
 /***/ }),
 
