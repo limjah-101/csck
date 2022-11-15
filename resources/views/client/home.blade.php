@@ -7,16 +7,16 @@
     <div class="container">
         <div class="home">
             <h3 class="text-capitalize">chalon-sur-saône</h3>
-            <h3>Canoë - Kayak</h1>
+            <h3>Canoë - Kayak</h3>
         </div>
 
         <div class="info_nav">
-            <div class="info_nav-box">                    
-                <i class="icofont-clock-time"></i>                   
+            <div class="info_nav-box">
+                <i class="icofont-clock-time"></i>
                 <p>Lun au Ven | 13h - 17h</p>
-            </div>           
-            <div class="info_nav-box">                  
-                    <i class="icofont-smart-phone"></i>                  
+            </div>
+            <div class="info_nav-box">
+                    <i class="icofont-smart-phone"></i>
                 <a href="tel:+33 769 32 92 71">+33 769 32 92 71</a>
             </div>
         </div>
@@ -56,7 +56,7 @@
         </div>
         <div class="row">
             <div class="col-lg-4 mb-5 mb-xl-0">
-                <div class="resume-card" >                   
+                <div class="resume-card" >
                     <div class="icon-wrapper">
                         <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
                             <path id="blob" d="M449.5,316Q431,382,369,403.5Q307,425,251,422Q195,419,127.5,403.5Q60,388,77,319Q94,250,89,189.5Q84,129,129.5,73.5Q175,18,236.5,60Q298,102,347,123Q396,144,432,197Q468,250,449.5,316Z"></path>
@@ -67,13 +67,13 @@
                     <h5 class=" mt-5 mb-3 ">60 adhérents</h5>
                     <p class="card-text text-justify">Une population loisirs très dynamique. Des adhérents de tout âge, tous niveaux.
                         Une représentation féminine significative et en progression.
-                    </p>                   
+                    </p>
                 </div>
             </div>
 
-           
+
             <div class="col-lg-4 mb-5 mb-xl-0">
-                <div class="resume-card" >                   
+                <div class="resume-card" >
                     <div class="icon-wrapper">
                         <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
                             <path id="blob" d="M449.5,316Q431,382,369,403.5Q307,425,251,422Q195,419,127.5,403.5Q60,388,77,319Q94,250,89,189.5Q84,129,129.5,73.5Q175,18,236.5,60Q298,102,347,123Q396,144,432,197Q468,250,449.5,316Z"></path>
@@ -84,12 +84,12 @@
                     <h5 class=" mt-5 mb-3 ">30 sorties par an</h5>
                     <p class="card-text text-justify">Un calendrier annuel de sorties pour débutants et confirmés;
                             Des sorties sont prévues sur des rivières, des bassins d’eau vive ou sur le littoral.
-                    </p>                   
+                    </p>
                 </div>
             </div>
 
             <div class="col-lg-4 mb-5 mb-xl-0">
-                <div class="resume-card" >                   
+                <div class="resume-card" >
                     <div class="icon-wrapper">
                         <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
                             <path id="blob" d="M449.5,316Q431,382,369,403.5Q307,425,251,422Q195,419,127.5,403.5Q60,388,77,319Q94,250,89,189.5Q84,129,129.5,73.5Q175,18,236.5,60Q298,102,347,123Q396,144,432,197Q468,250,449.5,316Z"></path>
@@ -98,7 +98,7 @@
                     </div>
                     <h5 class=" mt-5 mb-3 ">Compétition</h5>
                     <p class="card-text text-justify">Un pôle compétition performant (SUP, Ocean Racing et Descente).
-                    </p>                   
+                    </p>
                 </div>
             </div>
         </div>
@@ -130,7 +130,7 @@
                         <div class="action">
                             <a href="#">voir les détails</a>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -146,7 +146,7 @@
                         <div class="action">
                             <a href="#">voir les détails</a>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -162,9 +162,9 @@
                         <div class="action">
                             <a href="#">voir les détails</a>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
-            </div>           
+            </div>
         </div>
 
         <div class="row mt-4">
@@ -181,7 +181,7 @@
                         <div class="action">
                             <a href="#">voir les détails</a>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -197,7 +197,7 @@
                         <div class="action">
                             <a href="#">voir les détails</a>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -213,9 +213,9 @@
                         <div class="action">
                             <a href="#">voir les détails</a>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
-            </div>           
+            </div>
         </div>
     </div>
 </section>
@@ -226,8 +226,8 @@
         <div class="row justify-content-between align-items-center">
             <div class="col-6 d-none d-xl-block"></div>
             <div class="col-12 col-xl-6 text-center">
-                <h2 class="sub-title text-white text-xl-right">Dites oui à l'appel de l'eau</h2>
-                <a href="#" class="btn btn-warning mt-3 float-xl-right">Je m'inscris</a>
+                <h2 class="sub-title text-white text-xl-right">Prêt Pour De Nouvelles Aventures !</h2>
+                <a href="#" class="btn btn-warning mt-3 float-xl-right">Rejoindre le club</a>
             </div>
         </div>
     </div>
@@ -243,7 +243,7 @@
                 <h2 class="sub-title">À la une</h2>
             </div>
         </div>
-       
+
             <div class="owl-carousel">
 
                 <div class="owl-slide">
@@ -264,7 +264,7 @@
                         <div class="action">
                             <a href="#">voir les détails</a>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
                 </div>
 
@@ -286,7 +286,7 @@
                         <div class="action">
                             <a href="#">voir les détails</a>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
                 </div>
 
@@ -308,7 +308,7 @@
                         <div class="action">
                             <a href="#">voir les détails</a>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
                 </div>
 
@@ -330,7 +330,7 @@
                         <div class="action">
                             <a href="#">voir les détails</a>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
                 </div>
 
@@ -352,13 +352,13 @@
                         <div class="action">
                             <a href="#">voir les détails</a>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
                 </div>
 
             </div>
-            
-       
+
+
     </div>
 </section>
 <!--end section news-->

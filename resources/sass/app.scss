@@ -1,7 +1,5 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
 
 // Variables
 @import 'variables';
@@ -11,4 +9,7 @@
 // Custom styles
 //@import "frontend";
 @import "dashboard";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
 

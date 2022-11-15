@@ -79,11 +79,11 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li><a href="{{ route('page.all') }}">Toutes les pages</a></li>
-                                    <li><a href="{{ route('page.create') }}">Ajouter une page</a></li> 
+                                    <li><a href="{{ route('page.create') }}">Ajouter une page</a></li>
                                     @foreach($pages as $page)
                                         <li><a href="{{ route('page.show', $page) }}"> {{ $page->title }}</a></li>
 
-                                    @endforeach                                                             
+                                    @endforeach
                                 </ul>
                             </div>
                         </li>
@@ -124,7 +124,7 @@
                                     </li>
                                     <li>
                                         <a href="{{ route('event.create') }}">Ajouter</a>
-                                    </li>                                    
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -187,10 +187,10 @@
                     <i class="fa fa-cog"></i>
                     <span class="badge-sonar"></span>
                 </a>
-                <a href="{{ route('logout') }}" 
+                <a href="{{ route('logout') }}"
                     onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();"
-                >                                        
+                >
                     <i class="fa fa-power-off"></i>
                 </a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

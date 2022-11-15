@@ -17,16 +17,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    
+
     <!--icofont-->
     <link rel="preload" as="style" onload="this.rel='stylesheet'" href="{{ asset('vendor/icofont/icofont.min.css') }}">
-    
+
     <!-- owl carousel-->
     <link rel="stylesheet" href="{{ asset('vendor/owl.carousel/assets/owl.carousel.min.css') }}">
-    
+
     <!-- main styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/client/main.css') }}" rel="stylesheet">
@@ -35,7 +35,7 @@
 <body>
     <div id="app">
 
-        <main class="main">                       
+        <main class="main">
             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container-fluid">
                     <a class="navbar-brand mr-lg-5" href="{{ route('home') }}">
@@ -85,7 +85,7 @@
 
                         </ul>
                     </div>
-                    
+
                     <ul class="navbar-nav mr-auto social-links">
                         <li class="nav-item">
                             <a href="https://www.facebook.com/groups/860575377387016/about" target="_blank" class="nav-link"><i class="fab fa-facebook fa-lg"></i></a>
@@ -100,11 +100,11 @@
                         </li>
                     </ul>
                 </div>
-            </nav>                            
+            </nav>
             @yield('content')
         </main>
 
-        
+
     </div>
 </body>
 
